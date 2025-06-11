@@ -6,7 +6,7 @@ interface AdminRouteProps {
   children: React.ReactNode;
 }
 
-const AdminRoute = ({ AdminRouteProps }: AdminRouteProps) => {
+const AdminRoute = ({ children }: AdminRouteProps) => {
   const { user, loading } = useAuth();
 
   if (loading) {
